@@ -1,0 +1,200 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+}
+#container{
+    height: 670px;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: contain;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#select{
+    margin-top: 50px;
+}
+#select .choose{
+    color: white;
+    font-size: 30PX;
+    text-align: center;
+}
+#select .choose input[type='radio']{
+    width: 50px;
+    height: 20px;
+    border: 1px white;
+}
+#select .choose .left{
+    margin-left: 50px;
+}
+#select .checkbo{
+    text-align: center;
+    color: aliceblue;
+}
+#select .checkbo span{
+    font-size: 40px;
+}
+#select .checkbo button{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.game .table{
+    text-align: center;
+    margin-top: 30px;
+}
+.game .table .zero-cross{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    left: 0%;
+}
+.game .table button{
+    margin: 0px 25px 0px 0px;
+    height: 100px;
+    width: 29%;
+    background-color: transparent;
+    color: white;
+    font-size: 60px;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.game .table{
+    margin-left: 27%;
+    width: 51%;
+    height: 450px;
+    position: relative;
+}
+.game .table .one{
+    top: 0%;
+}
+.game .table .two{
+    top: 30%;
+}
+.game .table .three{
+    bottom: 12%;
+}
+.disp{
+    display: block;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    z-index: 500;
+}
+.fir{
+    top: 23%;
+}
+.sec{
+    top: 53%;
+}
+.thir{
+    transform: rotate(90deg);
+    left: 1%;
+    width: 60%;
+    top: 37%;
+}
+.four{
+    transform: rotate(90deg);
+    left: 35%;
+    width: 60%;
+    top: 37%;
+}
+/* ----------------------MEDIA QUERIES---------------------------------------------------*/
+@media(max-width:1250px){
+    .game .table{
+        margin-left: 15%;
+        width: 70%;
+    }
+}
+@media(max-width:992px){
+    .game .table{
+        margin-left: 10%;
+        width: 70%;
+    }
+    .game .table button{
+        margin: 0px 25px 0px 0px;
+        height: 80px;
+        width: 25%;
+    }
+    .game .table .one{
+        top:5%;
+    }
+    .game .table .two{
+        top: 35%;
+    }
+    .game .table .three{
+        bottom: 19%;
+    }
+    .thir{
+        left: -2%;
+        width: 70%;
+        top: 37%;
+    }
+    .four{
+        left: 28%;
+        width: 70%;
+        top: 37%;
+    }
+}
+@media(max-width:762px){
+    .game .table{
+        margin: 0%;
+        overflow: hidden;
+        width: 100%;
+    }
+    .thir{
+        left: -8%;
+        width: 80%;
+        top: 37%;
+    }
+    .four{
+        left: 23%;
+        width: 80%;
+        top: 37%;
+    }
+}
+@media(max-width:748px){
+    .game .table button{
+        margin: 0px 15px 0px 0px;
+        height: 70px;
+        width: 25%;
+        font-size: 30px;
+    }
+    .thir{
+        left: -16%;
+        width: 100%;
+        top: 37%;
+    }
+    .four{
+        left: 15%;
+        width: 100%;
+        top: 37%;
+    }
+
+    .game .table .three{
+        bottom: 24%;
+    }
+    #select .checkbo span{
+        font-size: 15px;
+    }
+    #select .checkbo button{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #select .choose{
+        font-size: 15PX;
+    }
+    #select .choose input[type='radio']{
+        width: 20px;
+        height: 15px;
+        border: 1px white;
+    }
+}
